@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: conversao-distancia
-        image: rafallltm/conversao-distancia:v2
+        image: rafallltm/conversao-distancia:v3
         ports:
         - containerPort: 5000
         resources:
