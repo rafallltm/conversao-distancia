@@ -19,7 +19,14 @@ spec:
         image: rafallltm/conversao-distancia:v2
         ports:
         - containerPort: 5000
-       
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "250m"  #milicores, ou seja, 1/4 de um núcleo
+          limits:
+            memory: "128Mi"
+            cpu: "500m"  #milicores, ou seja, 1/2 de um núcleo
+        
 ---
 
 apiVersion: v1
